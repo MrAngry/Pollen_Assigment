@@ -7,7 +7,7 @@ from rewards.ticketing_api_client import TicketingApiClient
 class Command(BaseCommand):
     """Script to refresh recommendations."""
 
-    def handle(self, *args, **options):
+    def handle(self, *args, **options): # No docstring
         from rewards.rewards import REWARDS  # Importing here will allow to patch the value for tests
         client = TicketingApiClient()
         users = client.get_users()

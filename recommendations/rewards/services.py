@@ -7,6 +7,7 @@ class RewardsRecommendationStrategy(abc.ABC):
         pass
 
 
+#This class should be tested using Data Driven Tests
 class HighestRewardsFirstStrategy(RewardsRecommendationStrategy):
     def run(self,points:int,rewards:List[Dict]) -> List[Dict]:
         """

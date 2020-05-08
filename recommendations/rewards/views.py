@@ -6,7 +6,7 @@ from rest_framework.status import HTTP_404_NOT_FOUND
 from rewards.models import RecommendedReward, User
 from rewards.serializers import RecommendedRewardSerializer
 
-
+#Lack of docstring
 @api_view(['GET'])
 def recommendations(request, user_id):
     try:

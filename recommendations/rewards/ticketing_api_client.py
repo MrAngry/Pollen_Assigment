@@ -1,9 +1,10 @@
-from typing import Dict, List
 
+
+from typing import Dict, List
 import requests
 from requests import Response
 
-
+#Exception could be placed in submodule
 class TicketingApiClientException(Exception):
     def __init__(self, response: Response):
         super().__init__(self)
