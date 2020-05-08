@@ -8,7 +8,7 @@
 This poses a security risk it would be much safer to fetch the key from environmental variable and leave the current value as 
 default if it is not present on the host like so:
 
-```SECRET_KEY = os.getenv(SECRET_KEY,default='$!=n6m1w4@4m150d0w(++hye!ndv4v-l6o$u7y4v7r4l*-pu#j)'```
+```SECRET_KEY = os.getenv('SECRET_KEY',default='$!=n6m1w4@4m150d0w(++hye!ndv4v-l6o$u7y4v7r4l*-pu#j)'```
 
 
 ---

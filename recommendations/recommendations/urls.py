@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from rewards import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('recommendations/<int:user_id>',views.recommendations)
 ]

@@ -9,7 +9,7 @@ from rewards.models import TestModel
 
 pytestmark = pytest.mark.django_db
 
-
+# Those are dummy test which were already present in the assigment
 def test_1():
     assert 1 == 1
 
